@@ -1,0 +1,284 @@
+@charset "UTF-8";
+@import "resset";
+@import "haeder";
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Neucha&family=Orbitron&family=Shadows+Into+Light+Two&display=swap');
+
+.wrap {
+	background-color: #000;
+	width: 100%;
+
+	.learncon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		figure { 
+			width: 100%;
+			position: relative;
+
+		video {
+			width: 100%;
+			height: 100vh;
+			object-fit: cover;
+		}
+		
+		h1 {
+			text-align: center;
+			width: 80%;
+			font: 5vw/1 "arial";
+			color: #fff;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			z-index: 0;
+		}
+		}
+
+		.learnboxcon {
+			margin-top: 5vw;
+			width: 100%;
+			padding: 0 2vw;
+			display: flex;
+			box-sizing: border-box;
+			flex-wrap: wrap;
+			justify-content: center;
+			position: relative;
+		
+			.learnbox {
+				width: 25%;
+				height: 500px;
+				margin: 2vw;
+				text-align: center;
+				overflow: hidden;
+				box-sizing: border-box;
+
+				.imagebox {
+					width: 100%;
+					height: 90%;
+					overflow: hidden;
+					border: 1px solid rgba(255, 255, 255, 0.156);
+					box-sizing: border-box;
+					border-radius: 10px;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						transition: 1s;
+
+						&:hover {
+							transform: scale(1.1);
+						}
+					}
+				}
+
+				p {
+					margin-top: 1vw;
+					font-size: 25px;
+					color: #fff;
+				}
+			}
+
+			.bg1 {
+				z-index:0;
+				position: absolute;
+				width: 30%;
+				height: 50%;
+				border: 1px solid red;
+
+				img {
+					object-fit: cover;
+				}
+			}
+			}
+		}
+	}
+
+	@media screen and (max-width : 900px) {
+		.wrap {
+			background-color: #000;
+			width: 100%;
+		
+			.learncon {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				
+				figure { 
+					width: 100%;
+					position: relative;
+		
+				video {
+					width: 100%;
+					height: 70vh;
+					object-fit: cover;
+				}
+				
+				h1 {
+					text-align: center;
+					width: 100%;
+					font: 50px/1 "arial";
+					color: #fff;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translateX(-50%) translateY(-50%);
+					z-index: 0;
+				}
+				}
+		
+				.learnboxcon {
+					margin-top: 5vw;
+					width: 100%;
+					padding: 0 2vw;
+					display: flex;
+					box-sizing: border-box;
+					flex-wrap: wrap;
+					justify-content: center;
+					position: relative;
+				
+					.learnbox {
+						width: 40%;
+						height: 500px;
+						margin: 2vw;
+						text-align: center;
+						overflow: hidden;
+						box-sizing: border-box;
+		
+						.imagebox {
+							width: 100%;
+							height: 90%;
+							overflow: hidden;
+							border: 1px solid rgba(255, 255, 255, 0.156);
+							box-sizing: border-box;
+							border-radius: 10px;
+		
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+								transition: 1s;
+		
+								&:hover {
+									transform: scale(1.1);
+								}
+							}
+						}
+		
+						p {
+							margin-top: 1vw;
+							font-size: 25px;
+							color: #fff;
+						}
+					}
+		
+					.bg1 {
+						z-index:0;
+						position: absolute;
+						width: 30%;
+						height: 50%;
+						border: 1px solid red;
+		
+						img {
+							object-fit: cover;
+						}
+					}
+					}
+				}
+			}
+		}
+
+	@media screen and (max-width : 600px) {
+			.wrap {
+				background-color: #000;
+				width: 100%;
+			
+				.learncon {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					
+					figure { 
+						width: 100%;
+						position: relative;
+			
+					video {
+						width: 100%;
+						height: 70vh;
+						object-fit: cover;
+					}
+					
+					h1 {
+						text-align: center;
+						width: 100%;
+						font: 28px/1 "arial";
+						color: #fff;
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translateX(-50%) translateY(-50%);
+						z-index: 0;
+					}
+					}
+			
+					.learnboxcon {
+						margin-top: 5vw;
+						width: 100%;
+						padding: 0 2vw;
+						display: flex;
+						box-sizing: border-box;
+						flex-wrap: wrap;
+						justify-content: center;
+						position: relative;
+					
+						.learnbox {
+							width: 80%;
+							height: 500px;
+							margin: 2vw;
+							text-align: center;
+							overflow: hidden;
+							box-sizing: border-box;
+			
+							.imagebox {
+								width: 100%;
+								height: 90%;
+								overflow: hidden;
+								border: 1px solid rgba(255, 255, 255, 0.156);
+								box-sizing: border-box;
+								border-radius: 10px;
+			
+								img {
+									width: 100%;
+									height: 100%;
+									object-fit: cover;
+									transition: 1s;
+			
+									&:hover {
+										transform: scale(1.1);
+									}
+								}
+							}
+			
+							p {
+								margin-top: 1vw;
+								font-size: 25px;
+								color: #fff;
+							}
+						}
+			
+						.bg1 {
+							z-index:0;
+							position: absolute;
+							width: 30%;
+							height: 50%;
+							border: 1px solid red;
+			
+							img {
+								object-fit: cover;
+							}
+						}
+						}
+					}
+				}
+			}

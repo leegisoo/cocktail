@@ -1,0 +1,678 @@
+@charset "UTF-8";
+@import "resset";
+@import "haeder";
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Neucha&family=Orbitron&family=Shadows+Into+Light+Two&display=swap');
+
+
+// 컨텐츠 영역 //
+@media screen and (min-width : 600px) {
+	.wrap {
+		background-color: #000;
+
+		section {
+			width: 100%;
+
+			.main {
+				width: 100%;
+
+				.mainvideo {
+					width: 100%;
+
+					video {
+						width: 100%;
+						height: 100vh;
+						object-fit: cover;
+					}
+				}
+
+				.maintext {
+					margin-top: -4px;
+					width: 100%;
+					height: 55vh;
+					background-image: url(/img/maintext.jpg);
+					background-attachment: fixed;
+					background-position: center;
+					background-size: cover;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color: #fff;
+
+					p {
+						color: #fff;
+						font: 50px "Neucha";
+						letter-spacing: 2px;
+					}
+				}
+			}
+
+			.mid {
+				width: 100%;
+
+				.left {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+
+					.leftimage {
+						width: 50%;
+						height: 500px;
+						background-image: url(/img/left.jpg);
+						background-size: cover;
+						background-position: center;
+					}
+
+					.lefttext {
+						width: 50%;
+
+						.history {
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							position: relative;
+
+							h1 {
+								font: bold 4vw "BhuTuka Expanded One";
+							}
+
+							.leftarrow {
+								left: 00px;
+								bottom: -50px;
+								position: absolute;
+								display: block;
+								width: 30%;
+								height: 0.8px;
+								background-color: #fff;
+								opacity: 0;
+								transition: 1s;
+
+								&::after {
+									content: "";
+									display: block;
+									width: 1px;
+									height: 25px;
+									position: absolute;
+									top: 0;
+									right: 0;
+									transform-origin: right top;
+								}
+
+								&::after {
+									transform: rotate(135deg);
+									background-color: #fff;
+								}
+
+								&.on {
+									opacity: 1;
+									left: 17vw;
+								}
+							}
+						}
+					}
+				}
+
+				.right {
+					display: flex;
+					flex-direction: row-reverse;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+
+					.rightimage {
+						width: 50%;
+						height: 500px;
+						background-image: url(/img/learn.jpg);
+						background-size: cover;
+						background-position: center;
+					}
+
+					.righttext {
+						width: 50%;
+
+						.learn {
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							position: relative;
+
+							h1 {
+								font: bold 4vw "BhuTuka Expanded One";
+							}
+
+							.rightarrow {
+								left: 00px;
+								bottom: -50px;
+								position: absolute;
+								display: block;
+								width: 30%;
+								height: 0.8px;
+								background-color: #fff;
+								opacity: 0;
+								transition: 1s;
+
+								&::after {
+									content: "";
+									display: block;
+									width: 1px;
+									height: 25px;
+									position: absolute;
+									top: 0;
+									right: 0;
+									transform-origin: right top;
+								}
+
+								&::after {
+									transform: rotate(135deg);
+									background-color: #fff;
+								}
+
+								&.on {
+									opacity: 1;
+									left: 17vw;
+								}
+							}
+						}
+					}
+				}
+
+				.left2 {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+
+					.left2image {
+						width: 50%;
+						height: 500px;
+						background-image: url(/img/liquor.jpg);
+						background-size: cover;
+						background-position: center;
+					}
+
+					.left2text {
+						width: 50%;
+
+						.glass {
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							position: relative;
+
+							h1 {
+								font: bold 4vw "BhuTuka Expanded One";
+							}
+
+							.left2arrow {
+								left: 00px;
+								bottom: -50px;
+								position: absolute;
+								display: block;
+								width: 30%;
+								height: 0.8px;
+								background-color: #fff;
+								opacity: 0;
+								transition: 1s;
+
+								&::after {
+									content: "";
+									display: block;
+									width: 1px;
+									height: 25px;
+									position: absolute;
+									top: 0;
+									right: 0;
+									transform-origin: right top;
+								}
+
+								&::after {
+									transform: rotate(135deg);
+									background-color: #fff;
+								}
+
+								&.on {
+									opacity: 1;
+									left: 17vw;
+								}
+							}
+						}
+					}
+				}
+
+				.right2 {
+					display: flex;
+					flex-direction: row-reverse;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+
+					.right2image {
+						width: 50%;
+						height: 500px;
+						background-image: url(/img/recipe.jpg);
+						background-size: cover;
+						background-position: center;
+					}
+
+					.right2text {
+						width: 50%;
+
+						.liquor {
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							position: relative;
+
+							h1 {
+								font: bold 4vw "BhuTuka Expanded One";
+							}
+
+							.right2arrow {
+								left: 00px;
+								bottom: -50px;
+								position: absolute;
+								display: block;
+								width: 30%;
+								height: 0.8px;
+								background-color: #fff;
+								opacity: 0;
+								transition: 1s;
+
+								&::after {
+									content: "";
+									display: block;
+									width: 1px;
+									height: 25px;
+									position: absolute;
+									top: 0;
+									right: 0;
+									transform-origin: right top;
+								}
+
+								&::after {
+									transform: rotate(135deg);
+									background-color: #fff;
+								}
+
+								&.on {
+									opacity: 1;
+									left: 17vw;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width : 600px) {
+	.wrap {
+		background-color: #000;
+
+		section {
+			width: 100%;
+
+			.main {
+				width: 100%;
+
+				.mainvideo {
+					width: 100%;
+
+					video {
+						width: 100%;
+						height: 100vh;
+						object-fit: cover;
+					}
+				}
+
+				.maintext {
+					margin-top: -4px;
+					width: 100%;
+					height: 55vh;
+					background-image: url(/img/maintext.jpg);
+					background-attachment: fixed;
+					background-position: center;
+					background-size: cover;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color: #fff;
+
+					p {
+						color: #fff;
+						font: 8vw "Neucha";
+						letter-spacing: 2px;
+					}
+				}
+			}
+
+			.mid {
+				width: 100%;
+
+				.left {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+
+					.leftimage {
+						width: 100%;
+						height: 300px;
+						background-image: url(/img/left.jpg);
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+
+					.lefttext {
+						width: 100%;
+						height: 300px;
+						position: absolute;
+
+						.history {
+							width: 100%;
+							height: 300px;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							position: relative;
+
+							&:hover {
+								background-color: rgba(0, 0, 0, 0.415);
+							}
+
+							h1 {
+								display: block;
+								font: bold 6vw "BhuTuka Expanded One";
+							}
+
+							.leftarrow {
+								left: 80px;
+								bottom: 100px;
+								position: absolute;
+								display: block;
+								width: 30%;
+								height: 0.8px;
+								background-color: #fff;
+								opacity: 0;
+								transition: 1s;
+
+								&::after {
+									content: "";
+									display: block;
+									width: 1px;
+									height: 25px;
+									position: absolute;
+									top: 0;
+									right: 0;
+									transform-origin: right top;
+								}
+
+								&::after {
+									transform: rotate(135deg);
+									background-color: #fff;
+								}
+
+								&.on {
+									opacity: 1;
+									left: 34vw;
+								}
+							}
+						}
+					}
+				}
+
+				.right {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+
+					.rightimage {
+						width: 100%;
+						height: 300px;
+						background-image: url(/img/learn.jpg);
+						background-size: cover;
+						background-position: center;
+					}
+
+					.righttext {
+						width: 100%;
+						height: 300px;
+						position: absolute;
+
+						.learn {
+							width: 100%;
+							height: 300px;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							position: relative;
+
+							&:hover {
+								background-color: rgba(0, 0, 0, 0.415);
+							}
+
+							h1 {
+								display: block;
+								font: bold 6vw "BhuTuka Expanded One";
+							}
+
+							.rightarrow {
+								left: 80px;
+								bottom: 100px;
+								position: absolute;
+								display: block;
+								width: 30%;
+								height: 0.8px;
+								background-color: #fff;
+								opacity: 0;
+								transition: 1s;
+
+								&::after {
+									content: "";
+									display: block;
+									width: 1px;
+									height: 25px;
+									position: absolute;
+									top: 0;
+									right: 0;
+									transform-origin: right top;
+								}
+
+								&::after {
+									transform: rotate(135deg);
+									background-color: #fff;
+								}
+
+								&.on {
+									opacity: 1;
+									left: 34vw;
+								}
+							}
+						}
+					}
+				}
+
+				.left2 {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+
+					.left2image {
+						width: 100%;
+						height: 300px;
+						background-image: url(/img/glass.jpg);
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+
+					.left2text {
+						width: 100%;
+						height: 300px;
+						position: absolute;
+
+						.glass {
+							width: 100%;
+							height: 300px;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							position: relative;
+
+							&:hover {
+								background-color: rgba(0, 0, 0, 0.415);
+							}
+
+							h1 {
+								display: block;
+								font: bold 6vw "BhuTuka Expanded One";
+							}
+
+							.left2arrow {
+								left: 80px;
+								bottom: 100px;
+								position: absolute;
+								display: block;
+								width: 30%;
+								height: 0.8px;
+								background-color: #fff;
+								opacity: 0;
+								transition: 1s;
+
+								&::after {
+									content: "";
+									display: block;
+									width: 1px;
+									height: 25px;
+									position: absolute;
+									top: 0;
+									right: 0;
+									transform-origin: right top;
+								}
+
+								&::after {
+									transform: rotate(135deg);
+									background-color: #fff;
+								}
+
+								&.on {
+									opacity: 1;
+									left: 34vw;
+								}
+							}
+						}
+					}
+				}
+
+				.right2 {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+
+					.right2image {
+						width: 100%;
+						height: 300px;
+						background-image: url(/img/liquor.jpg);
+						background-size: cover;
+						background-position: center;
+					}
+
+					.right2text {
+						width: 100%;
+						height: 300px;
+						position: absolute;
+
+						.liquor {
+							width: 100%;
+							height: 300px;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							position: relative;
+
+							&:hover {
+								background-color: rgba(0, 0, 0, 0.415);
+							}
+
+							h1 {
+								display: block;
+								font: bold 6vw "BhuTuka Expanded One";
+							}
+
+							.right2arrow {
+								left: 80px;
+								bottom: 100px;
+								position: absolute;
+								display: block;
+								width: 30%;
+								height: 0.8px;
+								background-color: #fff;
+								opacity: 0;
+								transition: 1s;
+
+								&::after {
+									content: "";
+									display: block;
+									width: 1px;
+									height: 25px;
+									position: absolute;
+									top: 0;
+									right: 0;
+									transform-origin: right top;
+								}
+
+								&::after {
+									transform: rotate(135deg);
+									background-color: #fff;
+								}
+
+								&.on {
+									opacity: 1;
+									left: 34vw;
+								}
+							}
+						}
+					}
+				}
+
+
+			}
+		}
+	}
+}
+
+// 컨텐츠 영역 end //

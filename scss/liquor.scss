@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@import "resset";
+@import "haeder";
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Neucha&family=Orbitron&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&display=swap');
+.wrap {
+	background: #000;
+
+	.liquor {
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.liquormain {
+			width: 100%;
+			height: 100vh;
+			background-image: url(/img/liqour2.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h1 {
+				width: 100%;
+				color: #fff;
+				font: 5vw/1 "arial";
+				opacity: 0;
+				animation: ani 1s linear forwards;
+			}
+
+			@keyframes ani {
+				0% {opacity: 0; transform: translateY(50%);}
+				100% {opacity: 1;}
+			}
+				
+			}
+		}
+
+		.liquortext {
+			width: 80%;
+			padding: 5vw;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-items: center;
+			color: #fff;
+
+			h1 {
+				font:bold 70px/1 "BhuTuka Expanded One";
+			}
+
+			p {
+				width: 80%;
+				margin-top: 5vw;
+				font:20px/2 "nanum gothic";
+			}
+		}
+
+		.liquorcon {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+			.liquortext {
+				margin-top: 5vw;
+				text-align: center;
+				color: #fff;
+				font: 2vw/1.5 "arial";
+				background-color: rgba(255, 255, 255, 0.408);
+			}
+
+			.swiper {
+				color: #fff;
+				width: 100%;
+				height: 700px;
+
+				.swiper-slide {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					
+					img {
+						object-fit: cover;
+					}
+				}
+			}
+
+			.more {
+				width: 200px;
+				height: 50px;
+				border-radius: 10px;
+				margin-bottom: 5vw;
+				color: #fff;
+				text-align: center;
+				border: 1px solid #fff;
+
+				h1 {
+					font:bold 20px/50px "BhuTuka Expanded One";
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width : 600px) {
+		.wrap {
+			background: #000;
+		
+			.liquor {
+				width: 100%;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+		
+				.liquormain {
+					width: 100%;
+					height: 70vh;
+					background-image: url(/img/liqour2.jpg);
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-attachment: fixed;
+					text-align: center;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+		
+					h1 {
+						width: 100%;
+						color: #fff;
+						font: 5vw/1 "arial";
+						opacity: 0;
+						animation: ani 1s linear forwards;
+					}
+		
+					@keyframes ani {
+						0% {opacity: 0; transform: translateY(50%);}
+						100% {opacity: 1;}
+					}
+						
+					}
+				}
+		
+				.liquortext {
+					width: 80%;
+					padding: 5vw;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-items: center;
+					color: #fff;
+		
+					h1 {
+						font:bold 50px/1 "BhuTuka Expanded One";
+					}
+		
+					p {
+						width: 80%;
+						margin-top: 5vw;
+						font: 15px/2 "arial";
+					}
+				}
+		
+				.liquorcon {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					position: relative;
+		
+					.liquortext {
+						margin-top: 5vw;
+						text-align: center;
+						color: #fff;
+						font: 2vw/1.5 "arial";
+						background-color: rgba(255, 255, 255, 0.408);
+					}
+		
+					.swiper {
+						color: #fff;
+						width: 100%;
+						height: 400px;
+		
+						.swiper-slide {
+							width: 100%;
+							height: 100%;
+							display: flex;
+							justify-content: center;
+							
+							img {
+								object-fit: cover;
+							}
+						}
+					}
+		
+					.more {
+						width: 200px;
+				height: 50px;
+						border-radius: 10px;
+						margin-bottom: 5vw;
+						color: #fff;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+		
+						h1 {
+							font:bold 20px/50px "BhuTuka Expanded One";
+						}
+					}
+				}
+			}
+		
+	}

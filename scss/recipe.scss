@@ -1,0 +1,786 @@
+@charset "UTF-8";
+@import "resset";
+@import "haeder";
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Neucha&family=Orbitron&family=Shadows+Into+Light+Two&display=swap');
+
+.wrap {
+	background-color: #000;
+	padding-top: 10vh;
+
+	.recipecon {
+		width: 100%;
+		padding: 0 5vw;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.vodka{
+			width: 100%;
+			height: 450px;
+			overflow: hidden;
+			background-image: url(/img/vodka.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h1 {
+				letter-spacing: 10px;
+				font-size: 150px;
+			}
+		}
+
+		.jin{
+			margin-top: 5vw;
+			width: 100%;
+			height: 450px;
+			overflow: hidden;
+			background-image: url(/img/jin.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h1 {
+				letter-spacing: 10px;
+				font-size: 150px;
+			}
+		}
+
+		.rum {
+			margin-top: 5vw;
+			width: 100%;
+			height: 450px;
+			overflow: hidden;
+			background-image: url(/img/rum.jpg);
+			background-position:top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h1 {
+				letter-spacing: 10px;
+				font-size: 150px;
+			}
+		}
+
+		.whisky{
+			margin-top: 5vw;
+			width: 100%;
+			height: 450px;
+			overflow: hidden;
+			background-image: url(/img/whisky.jpg);
+			background-position:bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h1 {
+				letter-spacing: 10px;
+				font-size: 150px;
+			}
+		}
+
+		.tequila {
+			margin-top: 5vw;
+			width: 100%;
+			height: 450px;
+			overflow: hidden;
+			background-image: url(/img/Tequila.jpg);
+			background-position:top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+
+			h1 {
+				letter-spacing: 10px;
+				font-size: 150px;
+			}
+		}
+
+		.imagecon {
+			text-align: center;
+			width: 100%;
+			color: #fff;
+
+			.swiper {
+				width: 100%;
+				height: 500px;
+
+				.swiper-slide {
+					width: 30%;
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+
+					div {
+						width: 30%;
+						height: 80%;
+						border: 1px solid rgba(255, 255, 255, 0.592);
+
+						a {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 100%;
+							height: 100%;
+							background-color: rgba(0, 0, 0, 0.5);
+							font: 30px "BhuTuka Expanded One";
+							border: 1px solid #fff;
+							opacity: 0;
+
+							&:hover {
+								opacity: 1;
+							}
+						}
+					}
+
+					.kiss {
+						background-image: url(/img/키스오브파이어.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.cosmo {
+						background-image: url(/img/코스모폴리탄.png);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.apple {
+						background-image: url(/img/애플마티니.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.sibriz {
+						background-image: url(/img/시브리즈.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.mosco {
+						background-image: url(/img/모스코\ 뮬.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.blood {
+						background-image: url(/img/블러디메리.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.hibe {
+						background-image: url(/img/하비월뱅어.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.black {
+						background-image: url(/img/블랙러시안.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.long {
+						background-image: url(/img/롱\ 아일랜드.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.dry {
+						background-image: url(/img/dry.jpg);
+						background-position: bottom;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.sling {
+						background-image: url(/img/sling.jpg);
+						background-position: bottom;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.ngroni {
+						background-image: url(/img/negroni.jpg);
+						background-position: bottom;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.paradise {
+						background-image: url(/img/파라다이스.jpg);
+						background-position: bottom;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.jintonic {
+						background-image: url(/img/진토닉.jpg);
+						background-position: bottom;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.pink {	
+						background-image: url(/img/핑크레이디.jpg);
+						background-position: bottom;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;}
+
+					.bacadi {
+						background-image: url(/img/바카디.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.die {
+						background-image: url(/img/다이키리.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.kuba {
+						background-image: url(/img/쿠바리브레.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.myty {
+						background-image: url(/img/마이타이.jpg);
+						background-position: bottom;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.pina {
+						background-image: url(/img/피나콜라다.jpg);
+						background-position: left;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.blue {
+						background-image: url(/img/블루\ 하와이.jpg);
+						background-position: left;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.newyork {
+						background-image: url(/img/뉴욕.jpg);
+						background-position: left;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.man {
+						background-image: url(/img/맨하탄.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.rust {
+						background-image: url(/img/러스트네일.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.old {
+						background-image: url(/img/올드패션.jpg);
+						background-position: bottom;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.shawer {
+						background-image: url(/img/위스키샤워.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.sunrize {
+						background-image: url(/img/데킬라선라이즈.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.rita {
+						background-image: url(/img/마가리타.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.TequilaSour {
+						background-image: url(/img/마타도르.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.ElDiablo {
+						background-image: url(/img/엘디아블로.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.mayo {
+						background-image: url(/img/마요.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+
+					.cola {
+						background-image: url(/img/콜라.jpg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						cursor: pointer;
+					}
+				}
+
+				.swiper-pagination-bullet {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width : 900px) { 
+
+	.wrap {
+		background-color: #000;
+	
+		.recipecon {
+			margin-top: 10vh;
+			width: 100%;
+			padding: 0 5vw;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+	
+			.vodka{
+				width: 100%;
+				height: 450px;
+				overflow: hidden;
+				background-image: url(/img/vodka.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+	
+				h1 {
+					letter-spacing: 10px;
+					font-size: 90px;
+				}
+			}
+	
+			.jin{
+				margin-top: 5vw;
+				width: 100%;
+				height: 450px;
+				overflow: hidden;
+				background-image: url(/img/jin.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+	
+				h1 {
+					letter-spacing: 10px;
+					font-size: 90px;
+				}
+			}
+	
+			.rum {
+				margin-top: 5vw;
+				width: 100%;
+				height: 450px;
+				overflow: hidden;
+				background-image: url(/img/rum.jpg);
+				background-position:top;
+				background-repeat: no-repeat;
+				background-size: cover;
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+	
+				h1 {
+					letter-spacing: 10px;
+					font-size: 90px;
+				}
+			}
+	
+			.whisky{
+				margin-top: 5vw;
+				width: 100%;
+				height: 450px;
+				overflow: hidden;
+				background-image: url(/img/whisky.jpg);
+				background-position:bottom;
+				background-repeat: no-repeat;
+				background-size: cover;
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+	
+				h1 {
+					letter-spacing: 10px;
+					font-size: 90px;
+				}
+			}
+	
+			.tequila {
+				margin-top: 5vw;
+				width: 100%;
+				height: 450px;
+				overflow: hidden;
+				background-image: url(/img/Tequila.jpg);
+				background-position:top;
+				background-repeat: no-repeat;
+				background-size: cover;
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				h1 {
+					letter-spacing: 10px;
+					font-size: 90px;
+				}
+			}
+	
+			.imagecon {
+				text-align: center;
+				width: 100%;
+				color: #fff;
+	
+				.swiper {
+					width: 100%;
+					height: 1050px;
+	
+					.swiper-slide {
+						width: 30%;
+						height: 1000px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-around;
+						align-items: center;
+	
+						div {
+							width: 70%;
+							height: 300px;
+	
+							a {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								width: 100%;
+								height: 100%;
+								background-color: rgba(0, 0, 0, 0.5);
+								font-size: 30px;
+								border: 1px solid #fff;
+								opacity: 0;
+	
+								&:hover {
+									opacity: 1;
+								}
+							}
+						}
+	
+						.kiss {
+							background-image: url(/img/키스오브파이어.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.cosmo {
+							background-image: url(/img/코스모폴리탄.png);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.apple {
+							background-image: url(/img/애플마티니.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.sibriz {
+							background-image: url(/img/시브리즈.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.mosco {
+							background-image: url(/img/모스코\ 뮬.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.blood {
+							background-image: url(/img/블러디메리.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.hibe {
+							background-image: url(/img/하비월뱅어.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.black {
+							background-image: url(/img/블랙러시안.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.long {
+							background-image: url(/img/롱\ 아일랜드.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.dry {
+							background-image: url(/img/dry.jpg);
+							background-position: bottom;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.sling {
+							background-image: url(/img/sling.jpg);
+							background-position: bottom;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.ngroni {
+							background-image: url(/img/negroni.jpg);
+							background-position: bottom;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.bacadi {
+							background-image: url(/img/바카디.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.die {
+							background-image: url(/img/다이키리.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.kuba {
+							background-image: url(/img/쿠바리브레.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.myty {
+							background-image: url(/img/마이타이.jpg);
+							background-position: bottom;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.pina {
+							background-image: url(/img/피나콜라다.jpg);
+							background-position: left;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.blue {
+							background-image: url(/img/블루\ 하와이.jpg);
+							background-position: left;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.newyork {
+							background-image: url(/img/뉴욕.jpg);
+							background-position: left;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.man {
+							background-image: url(/img/맨하탄.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.rust {
+							background-image: url(/img/러스트네일.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.old {
+							background-image: url(/img/올드패션.jpg);
+							background-position: bottom;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.shawer {
+							background-image: url(/img/위스키샤워.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.sunrize {
+							background-image: url(/img/데킬라선라이즈.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+	
+						.rita {
+							background-image: url(/img/마가리타.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+
+						.TequilaSour {
+							background-image: url(/img/마타도르.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							cursor: pointer;
+						}
+					}
+	
+					.swiper-pagination-bullet {
+						background-color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

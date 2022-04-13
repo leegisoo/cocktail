@@ -1,0 +1,687 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Neucha&family=Orbitron&family=Shadows+Into+Light+Two&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: 0.5s;
+  }
+  .header .Logo {
+    margin-left: 50px;
+    color: #fff;
+    font: normal 40px/1 "Dancing Script";
+  }
+  .header .menu {
+    display: flex;
+  }
+  .header .menu li {
+    margin-right: 50px;
+    transition: 0.5s;
+  }
+  .header .menu li a {
+    font: bold 15px/1 "BhuTuka Expanded One";
+    color: #fff;
+  }
+  .header .menu li:hover {
+    transform: scale(1.3);
+  }
+  .header .btn {
+    display: none;
+  }
+  .header.on {
+    background-color: rgba(0, 0, 0, 0.715);
+  }
+}
+@media screen and (max-width: 900px) {
+  .header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.715);
+  }
+  .header .Logo {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #fff;
+    font: normal 35px/1 "Dancing Script";
+  }
+  .header .menu {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .menu li {
+    transition: 0.5s;
+    margin-top: 50px;
+  }
+  .header .menu li a {
+    font: bold 30px/1 "BhuTuka Expanded One";
+    color: #fff;
+  }
+  .header .menu li:hover {
+    transform: scale(1.3);
+  }
+  .header .menu.on {
+    display: flex;
+  }
+  .header .btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+  }
+  .header.btn {
+    z-index: 2;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.715);
+  }
+}
+@media screen and (min-width: 600px) {
+  .wrap {
+    background-color: #000;
+  }
+  .wrap section {
+    width: 100%;
+  }
+  .wrap section .main {
+    width: 100%;
+  }
+  .wrap section .main .mainvideo {
+    width: 100%;
+  }
+  .wrap section .main .mainvideo video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .wrap section .main .maintext {
+    margin-top: -4px;
+    width: 100%;
+    height: 55vh;
+    background-image: url(/img/maintext.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .wrap section .main .maintext p {
+    color: #fff;
+    font: 50px "Neucha";
+    letter-spacing: 2px;
+  }
+  .wrap section .mid {
+    width: 100%;
+  }
+  .wrap section .mid .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap section .mid .left .leftimage {
+    width: 50%;
+    height: 500px;
+    background-image: url(/img/left.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .wrap section .mid .left .lefttext {
+    width: 50%;
+  }
+  .wrap section .mid .left .lefttext .history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  .wrap section .mid .left .lefttext .history h1 {
+    font: bold 4vw "BhuTuka Expanded One";
+  }
+  .wrap section .mid .left .lefttext .history .leftarrow {
+    left: 0px;
+    bottom: -50px;
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 0.8px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 1s;
+  }
+  .wrap section .mid .left .lefttext .history .leftarrow::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right top;
+  }
+  .wrap section .mid .left .lefttext .history .leftarrow::after {
+    transform: rotate(135deg);
+    background-color: #fff;
+  }
+  .wrap section .mid .left .lefttext .history .leftarrow.on {
+    opacity: 1;
+    left: 17vw;
+  }
+  .wrap section .mid .right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap section .mid .right .rightimage {
+    width: 50%;
+    height: 500px;
+    background-image: url(/img/learn.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .wrap section .mid .right .righttext {
+    width: 50%;
+  }
+  .wrap section .mid .right .righttext .learn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  .wrap section .mid .right .righttext .learn h1 {
+    font: bold 4vw "BhuTuka Expanded One";
+  }
+  .wrap section .mid .right .righttext .learn .rightarrow {
+    left: 0px;
+    bottom: -50px;
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 0.8px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 1s;
+  }
+  .wrap section .mid .right .righttext .learn .rightarrow::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right top;
+  }
+  .wrap section .mid .right .righttext .learn .rightarrow::after {
+    transform: rotate(135deg);
+    background-color: #fff;
+  }
+  .wrap section .mid .right .righttext .learn .rightarrow.on {
+    opacity: 1;
+    left: 17vw;
+  }
+  .wrap section .mid .left2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap section .mid .left2 .left2image {
+    width: 50%;
+    height: 500px;
+    background-image: url(/img/liquor.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .wrap section .mid .left2 .left2text {
+    width: 50%;
+  }
+  .wrap section .mid .left2 .left2text .glass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  .wrap section .mid .left2 .left2text .glass h1 {
+    font: bold 4vw "BhuTuka Expanded One";
+  }
+  .wrap section .mid .left2 .left2text .glass .left2arrow {
+    left: 0px;
+    bottom: -50px;
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 0.8px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 1s;
+  }
+  .wrap section .mid .left2 .left2text .glass .left2arrow::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right top;
+  }
+  .wrap section .mid .left2 .left2text .glass .left2arrow::after {
+    transform: rotate(135deg);
+    background-color: #fff;
+  }
+  .wrap section .mid .left2 .left2text .glass .left2arrow.on {
+    opacity: 1;
+    left: 17vw;
+  }
+  .wrap section .mid .right2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap section .mid .right2 .right2image {
+    width: 50%;
+    height: 500px;
+    background-image: url(/img/recipe.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .wrap section .mid .right2 .right2text {
+    width: 50%;
+  }
+  .wrap section .mid .right2 .right2text .liquor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  .wrap section .mid .right2 .right2text .liquor h1 {
+    font: bold 4vw "BhuTuka Expanded One";
+  }
+  .wrap section .mid .right2 .right2text .liquor .right2arrow {
+    left: 0px;
+    bottom: -50px;
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 0.8px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 1s;
+  }
+  .wrap section .mid .right2 .right2text .liquor .right2arrow::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right top;
+  }
+  .wrap section .mid .right2 .right2text .liquor .right2arrow::after {
+    transform: rotate(135deg);
+    background-color: #fff;
+  }
+  .wrap section .mid .right2 .right2text .liquor .right2arrow.on {
+    opacity: 1;
+    left: 17vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrap {
+    background-color: #000;
+  }
+  .wrap section {
+    width: 100%;
+  }
+  .wrap section .main {
+    width: 100%;
+  }
+  .wrap section .main .mainvideo {
+    width: 100%;
+  }
+  .wrap section .main .mainvideo video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .wrap section .main .maintext {
+    margin-top: -4px;
+    width: 100%;
+    height: 55vh;
+    background-image: url(/img/maintext.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .wrap section .main .maintext p {
+    color: #fff;
+    font: 8vw "Neucha";
+    letter-spacing: 2px;
+  }
+  .wrap section .mid {
+    width: 100%;
+  }
+  .wrap section .mid .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap section .mid .left .leftimage {
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/left.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .wrap section .mid .left .lefttext {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+  }
+  .wrap section .mid .left .lefttext .history {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  .wrap section .mid .left .lefttext .history:hover {
+    background-color: rgba(0, 0, 0, 0.415);
+  }
+  .wrap section .mid .left .lefttext .history h1 {
+    display: block;
+    font: bold 6vw "BhuTuka Expanded One";
+  }
+  .wrap section .mid .left .lefttext .history .leftarrow {
+    left: 80px;
+    bottom: 100px;
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 0.8px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 1s;
+  }
+  .wrap section .mid .left .lefttext .history .leftarrow::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right top;
+  }
+  .wrap section .mid .left .lefttext .history .leftarrow::after {
+    transform: rotate(135deg);
+    background-color: #fff;
+  }
+  .wrap section .mid .left .lefttext .history .leftarrow.on {
+    opacity: 1;
+    left: 34vw;
+  }
+  .wrap section .mid .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap section .mid .right .rightimage {
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/learn.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .wrap section .mid .right .righttext {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+  }
+  .wrap section .mid .right .righttext .learn {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  .wrap section .mid .right .righttext .learn:hover {
+    background-color: rgba(0, 0, 0, 0.415);
+  }
+  .wrap section .mid .right .righttext .learn h1 {
+    display: block;
+    font: bold 6vw "BhuTuka Expanded One";
+  }
+  .wrap section .mid .right .righttext .learn .rightarrow {
+    left: 80px;
+    bottom: 100px;
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 0.8px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 1s;
+  }
+  .wrap section .mid .right .righttext .learn .rightarrow::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right top;
+  }
+  .wrap section .mid .right .righttext .learn .rightarrow::after {
+    transform: rotate(135deg);
+    background-color: #fff;
+  }
+  .wrap section .mid .right .righttext .learn .rightarrow.on {
+    opacity: 1;
+    left: 34vw;
+  }
+  .wrap section .mid .left2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap section .mid .left2 .left2image {
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/glass.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .wrap section .mid .left2 .left2text {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+  }
+  .wrap section .mid .left2 .left2text .glass {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  .wrap section .mid .left2 .left2text .glass:hover {
+    background-color: rgba(0, 0, 0, 0.415);
+  }
+  .wrap section .mid .left2 .left2text .glass h1 {
+    display: block;
+    font: bold 6vw "BhuTuka Expanded One";
+  }
+  .wrap section .mid .left2 .left2text .glass .left2arrow {
+    left: 80px;
+    bottom: 100px;
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 0.8px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 1s;
+  }
+  .wrap section .mid .left2 .left2text .glass .left2arrow::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right top;
+  }
+  .wrap section .mid .left2 .left2text .glass .left2arrow::after {
+    transform: rotate(135deg);
+    background-color: #fff;
+  }
+  .wrap section .mid .left2 .left2text .glass .left2arrow.on {
+    opacity: 1;
+    left: 34vw;
+  }
+  .wrap section .mid .right2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap section .mid .right2 .right2image {
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/liquor.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .wrap section .mid .right2 .right2text {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+  }
+  .wrap section .mid .right2 .right2text .liquor {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  .wrap section .mid .right2 .right2text .liquor:hover {
+    background-color: rgba(0, 0, 0, 0.415);
+  }
+  .wrap section .mid .right2 .right2text .liquor h1 {
+    display: block;
+    font: bold 6vw "BhuTuka Expanded One";
+  }
+  .wrap section .mid .right2 .right2text .liquor .right2arrow {
+    left: 80px;
+    bottom: 100px;
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 0.8px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 1s;
+  }
+  .wrap section .mid .right2 .right2text .liquor .right2arrow::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right top;
+  }
+  .wrap section .mid .right2 .right2text .liquor .right2arrow::after {
+    transform: rotate(135deg);
+    background-color: #fff;
+  }
+  .wrap section .mid .right2 .right2text .liquor .right2arrow.on {
+    opacity: 1;
+    left: 34vw;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
